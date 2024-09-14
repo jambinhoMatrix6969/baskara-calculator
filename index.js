@@ -8,6 +8,8 @@ let rdelta;
 let X1
 let X2
 let dA
+let Xv
+let Yv
 const myh2 = document.getElementById('myh2');
 const myh22 = document.getElementById('myh22');
 const myh23 = document.getElementById('myh23');
@@ -29,4 +31,8 @@ document.getElementById('mybutton').onclick = function(){
     myh2.textContent = `Delta = ${delta}`
     myh22.textContent = `X1 = ${X1}`
     myh23.textContent = `X2 = ${X2}`
+    Xv = -B/2A;
+    console.log(`Xv é igual ${Xv}`);
+    Yv = -delta/4A
+    console.log(`Yv é igual ${Yv}`);
 }
